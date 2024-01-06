@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 0;
+
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(36, 75, 60);
+  list-style-type: none;
+  
+}
+
+nav li{
+  display: inline;
+  float: left;
+}
+
+a{
+  text-decoration: none;
+  font-weight: bolder;
+}
+a:hover{
+  background-color: rgb(54, 155, 68);
+  color: rgb(255, 238, 0)
+}
+
+footer a{
+  color: white;
+}
+
+nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  
+}
+nav li a:hover{
+  background-color: rgb(54, 155, 68);
+}
+.active{
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+}.active:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+header{
+  background-color: rgb(36, 75, 60);
+  padding: 30px;
+  color: white;
+}
+
+section{
+  padding: 20px
+}
+
+section:nth-child(even){
+  background-color: rgb(36, 75, 60);
+  color: white;
+}
+
+[class^=container]{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.container-reverse{
+  flex-direction: row-reverse;
+}
+.texto{
+  flex: 55%;
+  justify-content: center;
+}
+.imagem{
+  flex: 35%;
+  justify-content: center;
+}
+
+label{
+  margin-left: 5px;
+}
+
+button{
+  background-color: rgb(36, 75, 60);
+  border: none;
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 28px;
+  margin: auto;
+
+}
+
+button:hover{
+  background-color: rgb(54, 155, 68);
+}
+
+section p{
+  text-align: justify;
+}
+
+
+figcaption{
+  text-align: center;
+  margin-top: 10px;
+}
+
+img{
+  border-radius: 10px;
+  width: 100%;
+}
+
+
+
+table caption{
+  margin-bottom: 10px;
+}
+table {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-inline: auto;
+  border-collapse: collapse;
+}
+td{
+  text-align: center;
+  padding: 4px;
+}
+tr{
+  border-bottom: 1px solid black;
+}
+tr:nth-child(even){
+  background-color: rgb(199, 199, 199);
+}
+th{
+  background-color: rgb(36, 75, 60);
+  color: white;
+  padding: 6px;
+}
+tr td:nth-child(1){
+  text-align: left;
+
+}
+tr td:nth-child(3){
+  text-align: right;
+}
+th:nth-child(1){
+  text-align: left;
+
+}
+th:nth-child(3){
+  text-align: right;
+}
+.tabela{
+  overflow: auto;
+  text-align: center;
+}
+
+
+aside{
+  margin-left: 0;
+  background-color: rgb(36, 75, 60);
+  color: white;
+  padding: 21px;
+  width: 20%;
+}
+aside a{
+  color: white;
+}
+footer{
+  padding: 15px;
+  margin-top: 20px;
+  background-color: rgb(36, 75, 60);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  column-gap: 20px;
+  row-gap: 3px;
+
+}
+
+.index{
+  font-size: 22px
+}
+#motivacao::selection{
+  background-color: rgb(118, 216, 118);
+}
+#motivacao:hover{
+  font-weight: bolder;
+}
+
+picture{
+  margin-top: 20px;
+}
+
+.input-quiz{
+  margin-right: 10px;
+}
+#responder{
+  margin-top: 30px;
+}
+
+#calendario{
+  background-color: white;
+  color: black;
+}
+#calendario table{
+  font-size: 20px;
+}
+#calendario table tr{
+  border: 0;
+  background-color: white;
+}
+#calendario table td,th{
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+
+}
+
+
+
+#descricao{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 3px solid rgb(36, 75, 60);
+}
+#titulo{
+  width: 80%;
+  border: 3px solid rgb(36, 75, 60);
+}
+
+
+.dia-atual{
+  background-color: yellow;
+}
+
+.paragrafo-data{
+  font-weight: bolder;
+}
+
+#carrossel{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center
+  
+}
+
+#carrossel img{
+  width: 80%;
+  object-fit: cover
+}
+
+#carrossel img.atual{
+  display: block;
+}
+#carrossel img:not(.atual){
+  display: none;
+}
+
+#botoes{
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#anterior, #proximo{
+  font-size: 14px;
+  border-radius: 50px;
+  padding: 20px;
+  margin: 10px;
+}
+
+#tamanho-fonte{
+  width: 30px;
+}
+#nascimento{
+  width: 100px;
+}
+
+
+
+@media only screen and (max-width: 420px) {
+  
+  nav{
+    position: static;
+  }
+  nav ul{
+    width: 100%;
+  }
+  nav li{
+    display: block;
+    float: none;
+    border: 0;
+  }
+  aside{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .imagem{
+    flex: 100%;
+  }
+  .texto{
+    flex: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  aside{
+    display: none;
+  }
+}

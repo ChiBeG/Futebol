@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script src="script.js"></script>
+    <title>Futebol</title>
+</head>
+<body>
+    <header>
+        <h1>História do Futebol</h1>
+        <p>Aprenda sobre a origem do futebol</p>
+        <label for="nascimento">Quando você nasceu?        </label><input id="nascimento" type="date" onchange="escreverDatas()"> 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a class="active" href="historia.html" target="_self">História</a></li>
+            <li><a href="quiz.html" target="_self">Quiz</a></li>
+            <li><a href="curiosidades.html" target="_self">Curiosidades</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+        <h2>Tópicos</h2>
+        <ol>
+            <li><a href="#Origem">Origem</a></li>
+            <li><a href="#Regras">Criação das regras</a></li>
+            <li><a href="#Crescimento">Crescimento</a></li>
+            <li><a href="#Copa">Surgimento das Copas do Mundo</a></li>
+            <li><a href="#Brasil">Como o futebol chegou ao Brasil?</a></li>
+        </ol>
+    </aside>
+
+
+    <div id="Eventos">
+        <section id="Origem">
+            <h2>A origem do esporte</h2>
+            
+            <div class="container-reverse">
+                <figure class="imagem">
+                    <img src="img/bolaCouro.jpg" alt="Bola de couro">
+                    <figcaption>Bola de couro</figcaption>
+                </figure>
+                
+                <div class="texto" id="origemTexto">
+                    <p>
+                        Não se sabe com precisão a data em que o futebol surgiu. Historiadores contam que os ingleses adquiriram o hábito de chutar uma bola de couro, símbolo da cabeça de um membro do exército da Dinamarca, como forma de comemorar a expulsão dos dinamarqueses de seu país ainda no século X. A ação era realizada anualmente, mas, com o tempo, a prática passou a popularizar-se, e os jogos com a bola passaram a ser realizados com maior frequência.
+                    </p>
+                    <p>
+                        Os jogos não tinham regras estabelecidas, e era permitido diversos tipos de agressões para avançar ou conter o adversário, o que acabava ferindo muitos dos praticantes. Com as consequências, o Rei Eduardo II decidiu proibir os jogos, temendo a perda dos soldados do seu exército. A prática foi proibida, mas não cessada e, apenas em 1681, os jogos com a bola voltaram a ser permitidos na Inglaterra.
+                    </p>
+                    <p>
+                        O período entre 1810 e 1840 registrou o crescimento desse jogo popular pelos alunos das escolas públicas da Inglaterra, porém, o esporte permaneceu sendo considerado uma atividade violenta e não apropriada aos jovens de classe alta dos colégios da elite inglesa.
+                    </p>
+                    <p class="paragrafo-data" id="retorno"></p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="Regras">
+            <h2>Criação das regras</h2>
+            
+            <div class="container">
+                <figure class="imagem">
+                    <img src="img/juiz.jpg" alt="Árbitro de futebol">
+                    <figcaption>Árbitro de futebol</figcaption>
+                </figure>
+                
+                <div class="texto" id="regrasTexto">
+                    <p>
+                        As primeiras regras escritas do futebol surgiram em 1830 — The Football Rulles — e foram criadas pelo Colégio Harrow. Estabeleceram o número de 11 jogadores para cada equipe e os gols para onde a bola deveria ser conduzida. Como havia uma diversidade nas regras, que variavam para cada colégio, em 1848, houve uma reunião de diretores de várias escolas que estabeleceram um código comum para o futebol, o que ampliou a aceitação da atividade nos meios educacionais e nas classes mais altas.
+                    </p>
+                    <p>
+                        Ao longo das décadas, novas regras foram implementadas e muitas outras modificadas até o futebol chegar ao formato que é conhecido hoje. Entre as mudanças, muitas colaboram para que o jogo ficasse mais limpo e justo.
+                    </p>
+                    <p>
+                        Entre as principais regras inseridas, uma das ferramentas fundamentais para a disciplina foram os cartões amarelos e vermelhos. Eles foram inseridos em 1970, para a Copa do México (iniciada em 31 de Maio), como uma forma de facilitar a comunicação entre os países que não falavam o mesmo idioma. Além disso, as regras do futebol têm alterações constantes pelos órgãos reguladores, como mudanças nas dimensões de campo, substituições de jogadores e muitas outras.
+                    </p>
+                    <p class="paragrafo-data" id="criacaoRegras"></p>
+                    <p class="paragrafo-data" id="usoCartao"></p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="Crescimento">
+            <h2>Como se popularizou o futebol?</h2>
+            
+            <div class="container-reverse">
+                <figure class="imagem">
+                    <img src="img/torcida.jpg" alt="Torcedores">
+                    <figcaption>A torcida do futebol</figcaption>
+                </figure>
+                
+                <div class="texto" id="crescimentoTexto">
+                    <p>
+                        O crescimento dos desafios e torneios entre clubes foi impulsionador para a institucionalização do futebol, que ocorreu em 26 de outubro de 1863. A partir da fundação da Football Association (FA), instituição que formulou as primeiras regras para a prática do futebol, o esporte passou a ter mais visibilidade e a elaboração de campeonatos e partidas oficiais iniciou-se. A criação dos campeonatos foi importante para o surgimento de regras universais para o futebol, e, desde então, o esporte começou a expandir-se, universalmente.
+                    </p>
+                    <p>
+                        Ao longo da década de 1870, o futebol começou a ser praticado pela classe trabalhadora inglesa, estimulada pelos donos de fábricas, pela necessidade de jogadores para se formar equipes. Nesse momento, o futebol deixou de ser privilégio da classe endinheirada e passou a ser difundido pelos centros urbanos e pelos diversos segmentos da sociedade britânica, contribuindo para um espaço de convivência entre burgueses e operários.
+                    </p>
+                    <p class="paragrafo-data" id="FA"></p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="Copa">
+            <h2>O Surgimento da Copa do Mundo</h2>
+            
+            <div class="container">
+                <figure class="imagem">
+                    <img src="img/uruguai1930.webp" alt="Seleção do Uruguai na Copa do Mundo de 1930">
+                    <figcaption>Seleção do Uruguai na Copa do Mundo de 1930</figcaption>
+                </figure>
+                
+                <div class="texto" id="copaTexto">
+                    <p>
+                        No dia 21 de maio de 1904, dirigentes da Bélgica, Dinamarca, Espanha, França, Holanda, Suécia e Suíça reuniram-se em Paris, na França, para fundar a Fédération Internationale of Football Association (Federação Internacional das Associações de Futebol), a FIFA, órgão que comanda o futebol e é responsável por organizar competições de nível mundial. A entidade foi criada para suprir o desejo de um torneio de futebol entre os países.
+                    </p>
+                    <p>
+                        Após a criação, a Inglaterra foi a primeira a aderir à nova federação, seguida por Alemanha, Áustria, Itália e Hungria. Em seguida, países de outros continentes aderiram à FIFA. Atualmente, a federação tem sua sede em Zurique, na Suíça.
+                    </p>
+                    <p>
+                        A primeira edição da Copa do Mundo de Futebol foi realizada, pela organização, em 1930, no Uruguai, e contou com a participação de 13 seleções da América e Europa, o que influenciou ainda mais a expansão do futebol.
+                    </p>
+                    <p>
+                        Depois desse ano, a Copa do Mundo criou a tradição de ser disputada de quatro em quatro anos. Posteriormente, Itália e França sediaram o mundial, que foi paralisado de 1942 a 1946, em consequência da Segunda Guerra Mundial.
+                    </p>
+                    <p>
+                        Foram disputadas 21 Copas do Mundo, contando até sua edição de 2022, e apenas oito países de dois continentes conseguiram levantar a taça de campeão. O Brasil é o primeiro da lista, com, até então, cinco vitórias, e o único a ter disputado todas edições do torneio.
+                    </p>
+                    <p class="paragrafo-data" id="FIFA"></p>
+                    <p class="paragrafo-data" id="primeiraCopa"></p>
+                    <p class="paragrafo-data" id="Copa2022"></p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="Brasil">
+            <h2>Como o futebol chegou ao Brasil?</h2>
+            
+            <div class="container">
+                <figure class="imagem">
+                    <img src="img/charlesMiller.webp" alt="Charles Miller">
+                    <figcaption>Charles Miller, o pai do futebol no Brasil</figcaption>
+                </figure>
+                
+                <div class="texto" id="brasilTexto">
+                    <p>
+                        O futebol chegou ao Brasil em 1894. Charles Miller, um jovem filho de ingleses que chegou a São Paulo após realizar seus estudos na Europa, trouxe consigo bolas e regras para a prática do futebol no país.
+                    </p>
+                    <p>
+                        A prática do futebol, no Brasil, foi realizada pela primeira vez pelo São Paulo Athletic Club, formado por colonos ingleses, mas o primeiro clube formado, especialmente para a prática do futebol, foi a Associação Atlética Mackenzie College, em 1898.
+                    </p>
+                    <p>
+                        O crescimento do futebol no Brasil acabou fazendo com que o esporte mais praticado na época, o remo, viesse a ficar em segundo plano, chegando a ser quase esquecido pelos brasileiros posteriormente. Com isso, algumas equipes de remo tornaram-se clubes de futebol, como o Flamengo, Vasco da Gama e Botafogo, no Rio de Janeiro.
+                    </p>
+                    <p>
+                        A primeira equipe de futebol carioca foi o Fluminense Football Clube, fundado no ano de 1902. Também foi a primeira equipe a cobrar ingressos para uma partida de futebol no Brasil, realizada contra o Paulistano, quando, aproximadamente, 2500 pessoas acompanharam o duelo. Esse jogo também foi marcado como o primeiro que teve o comparecimento de um chefe de Estado, o então Presidente da República Rodrigues Alves.
+                    </p>
+                    <p class="paragrafo-data" id="chegadaBrasil"></p>
+                    <p class="paragrafo-data" id="Mackenzie"></p>
+                    <p class="paragrafo-data" id="Fluminense"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="Inclusao">
+        <h2>Inclua novos eventos</h2>
+        
+        <div class="container">
+            
+            <div class="texto" id="inclusaoTexto">
+                <input type="text" id="titulo" placeholder="Título"><br>
+                <textarea name="textarea" id="descricao" cols="30" rows="10" placeholder="Descreva o evento aqui"></textarea><br>
+                <button onclick="incluirEvento()">Adicionar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Site desenvovido para a disciplina de DPW do Bacharelado de Sistemas de Informação da UNIRIO</p>
+        <p>Autor: Pedro Britto</p>
+        <p>Novembro de 2022</p>
+        <p>Referências: <a target="externo" href="https://brasilescola.uol.com.br/educacao-fisica/historia-do-futebol.htm">Site Brasil Escola</a></p>
+    </footer>
+
+    
+</body>
+</html>

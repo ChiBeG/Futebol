@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script src="script.js"></script>
+    <title>Futebol</title>
+</head>
+<body onload="carregarCarrossel()">
+    <header>
+        <h1>Curiosidades do Futebol</h1>
+        <p>Confira algumas curiosidades relacionadas ao esporte</p>
+        <h2>Alterar cores</h2>
+        <div>
+            <div class="input-cores">
+                <input type="color" id="principal" name="principal" value="#ffffff" onchange="mudarBackground()">
+                <label for="principal">Fundo Principal</label>
+                <input type="color" id="fonte-principal" name="fonte-principal" onchange="mudarCorTexto()">
+                <label for="fonte-principal">Letra Principal</label>
+            </div>
+            <input type="number" name="tamanho-fonte" id="tamanho-fonte" value="16" onchange="mudarTamanhoFonte()">
+            <label for="tamanho-fonte">Tamanho da Fonte</label>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="historia.html" target="_self">História</a></li>
+            <li><a href="quiz.html" target="_self">Quiz</a></li>
+            <li><a class="active" href="curiosidades.html" target="_self">Curiosidades</a></li>
+        </ul>
+    </nav>
+
+    <div class="tabela">
+        <table>
+            <caption>Os 10 maiores artilheiros do futebol - gols reconhecidos pela <a target="externa" href="https://www.fifa.com/">FIFA</a></caption>
+            <tr>
+              <th>Jogador</th>
+              <th>Gols</th>
+              <th>País</th>
+              <th>Atuação Profissional</th>
+              <th>Jogadas Marcantes</th>
+            </tr>
+            <tr>
+                <td>Cristiano Ronaldo</td><td>819</td><td>Portugal</td><td>2001 - hoje</td><td><a target="externo" href="https://www.youtube.com/watch?v=OUKGsb8CpF8">Vídeo</a></td>
+            </tr>
+            <tr>
+                <td>Josef Bican</td><td>805</td><td>Áustria</td><td>1928 - 1955</td><td><a target="externo" href="https://www.youtube.com/watch?v=PhziVAEnkTs">Vídeo</a></td>
+            </tr>
+            <tr>
+                <td>Lionel Messi</td><td>788</td><td>Argentina</td><td>2003 - hoje</td><td><a target="externo" href="https://www.youtube.com/watch?v=PSanJ5swYBM">Vídeo</a></td>
+            </tr>
+            <tr>
+                <td>Romário</td><td>772</td><td>Brasil</td><td>1985 - 2009</td><td><a target="externo" href="https://www.youtube.com/watch?v=-45m_DJJ_UY">Vídeo</a></td>
+            </tr>
+            <tr>
+                <td>Pelé</td><td>767</td><td>Brasil</td><td>1956 - 1977</td><td><a target="externo" href="https://www.youtube.com/watch?v=WXg8P0u9W9I">Vídeo</a></td>
+            </tr>
+            <tr>
+                <td>Ferenc Puskás</td><td>746</td><td>Hungria</td><td>1943 - 1966</td><td><a target="externo" href="https://www.youtube.com/watch?v=zeUp_aGj8YA">Vídeo</a></td>
+            </tr>
+            <tr>
+                <td>Gerd Müller</td><td>735</td><td>Alemanha</td><td>1963 - 1982</td><td><a target="externo" href="https://www.youtube.com/watch?v=hCOC1TS9A1I">Vídeo</a></td>
+            </tr>
+            <tr>
+                <td>Eusébio</td><td>623</td><td>Portugal</td><td>1957 - 1960</td><td><a target="externo" href="https://www.youtube.com/watch?v=1r5iZDl5uKM">Vídeo</a></td>
+            </tr>
+            <tr>
+                <td>Robert Lewandowski</td><td>620</td><td>Polônia</td><td>2006 - hoje</td><td><a target="externo" href="https://www.youtube.com/watch?v=fTrV-GTHqyE">Vídeo</a></td>
+            </tr>
+            <tr>
+                <td>Zlatan Ibrahimovic</td><td>512</td><td>Suécia</td><td>1999 - hoje</td><td><a target="externo" href="https://www.youtube.com/watch?v=ntohaMEcPL0">Vídeo</a></td>
+            </tr>
+          </table>
+    </div>
+
+    <div id="carrossel">
+        <img class="atual" src="img/slider/bluelockSlide.jpg" alt="Blue Lock">
+        <img src="img/slider/inazumaElevenSlide.jpeg" alt="Inazuma Eleven">
+        <img src="img/slider/tsubasaSlide.jpg" alt="Captain Tsubasa">
+        <img src="img/slider/maracana.jpg" alt="Maracanã">
+        <img src="img/slider/saoJanuario.jpeg" alt="São Januário">
+        <img src="img/slider/maradonaCampeao.jpeg" alt="Argentina campeã em 1986">
+        <img src="img/slider/messiCampeao.jpeg" alt="Argentina campeã em 2022">
+        <img src="img/slider/peleCampeao.jpeg" alt="Brasil campeão em 1970">
+        <img src="img/slider/ribamar.jpeg" alt="Ribamar">
+
+    </div>
+    <div id="botoes">
+        <button id="anterior">Anterior</button>
+        <button id="proximo">Próximo</button>
+    </div>
+    
+    
+    <section>
+        <h2>Futebol na mídia</h2>
+        <p>A grande influência do Futebol pelo globo terrestre é refletida pelo seu protagonismo em várias obras do entretenimento.</p>
+    </section>
+    <section>
+        <h2>Animes</h2>
+        <div class="container">
+            <figure>
+                <img src="img/blueLock.jpg" alt="Blue Lock">
+                <figcaption>Blue Lock</figcaption>
+            </figure>
+            <figure>
+                <img src="img/captainTsubasa.jpg" alt="Captain Tsubasa">
+                <figcaption>Captain Tsubasa</figcaption>
+            </figure>
+            <figure>
+                <img src="img/inazumaEleven.jpg" alt="Inazuma Eleven">
+                <figcaption>Inazuma Eleven</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section>
+        <h2>Séries</h2>
+        <div class="container">
+            <figure>
+                <img src="img/tedLasso.jpg" alt="Ted Lasso">
+                <figcaption>Ted Lasso</figcaption>
+            </figure>
+            <figure>
+                <img src="img/EnglishGame.jpg" alt="The English Game">
+                <figcaption>Captain Tsubasa</figcaption>
+            </figure>
+            <figure>
+                <img src="img/ClubCuervos.jpg" alt="Club de Cuervos">
+                <figcaption>Club de Cuervos</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section>
+        <h2>Filmes</h2>
+        <div class="container">
+            <figure>
+                <img src="img/pele.jpg" alt="Pelé: O Nascimento de uma Lenda">
+                <figcaption>Pelé: O Nascimento de uma Lenda</figcaption>
+            </figure>
+            <figure>
+                <img src="img/maradona.jpg" alt="Diego Maradona">
+                <figcaption>Diego Maradona</figcaption>
+            </figure>
+            <figure>
+                <img src="img/millerFried.jpg" alt="Miller & Fried - As origens do país do futebol">
+                <figcaption>Miller & Fried - As origens do país do futebol</figcaption>
+            </figure>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <p>Site desenvovido para a disciplina de DPW do Bacharelado de Sistemas de Informação da UNIRIO</p>
+        <p>Autor: Pedro Britto</p>
+        <p>Novembro de 2022</p>
+        <p>Referências: <a target="externo" href="https://brasilescola.uol.com.br/educacao-fisica/historia-do-futebol.htm">Site Brasil Escola</a></p>
+    </footer>
+    
+</body>
+</html>
